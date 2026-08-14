@@ -488,7 +488,11 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .anais__title { color: var(--heading); font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; margin-bottom: 1.2rem; }
 .anais__text { color: var(--text); max-width: 640px; margin: 0 auto 1rem; }
 .anais__text strong { color: var(--brand-dark); }
-.anais .btn { margin-top: 1.2rem; }
+/*.anais .btn { margin-top: 1.2rem; }*/
+.anais .btn {
+  margin: 1.2rem auto 0; /* O "auto" força a centralização do elemento */
+  width: fit-content; /* Garante que o botão se molde ao tamanho do texto */
+}
 
 /* ---------- Canal + redes ---------- */
 .canal { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: center; }
@@ -649,7 +653,14 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 @media (max-width: 480px) {
   .stats { grid-template-columns: 1fr; }
-  .hero__actions .btn { width: 100%; justify-content: center; }
+  /*.hero__actions .btn { width: 100%; justify-content: center; }
+  .gallery { grid-template-columns: 1fr 1fr; gap: .6rem; }
+}*/
+  /* Adicionamos o .anais .btn nesta regra junto com o hero */
+  .hero__actions .btn, .anais .btn {
+    width: 100%;
+    justify-content: center;
+  }
   .gallery { grid-template-columns: 1fr 1fr; gap: .6rem; }
 }
 
