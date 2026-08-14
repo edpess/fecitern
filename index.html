@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FECITERN — Feira Estadual de Ciência, Inovação e Tecnologia do Rio Grande do Norte</title>
+  <meta name="description" content="A Feira Estadual de Ciência, Inovação e Tecnologia do Rio Grande do Norte (FECITERN) — um espaço de desenvolvimento da cultura científica no espaço escolar." />
+  <link rel="icon" type="image/png" href="assets/logo-fecitern.png" />
+
+  <!-- ============================================================
+       FONTE (Google Fonts via CDN) — Rubik, identidade escolhida
+       ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ÍCONES (Font Awesome via CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS do GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+<body id="top">
+
+  <!-- ============================================================
+       HEADER / NAVBAR (fixa — ganha sombra ao rolar)
+       ============================================================ -->
+  <header class="nav" id="navbar">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="FECITERN — início">
+        <img src="assets/logo-fecitern.png" alt="" width="48" height="31" />
+        <span class="nav__logo-text">FECITERN</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Navegação principal">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#eventos" class="nav__link">Eventos</a>
+
+        <div class="nav__item has-dropdown">
+          <button class="nav__link nav__link--btn" type="button" aria-haspopup="true" aria-expanded="false">
+            Oficinas <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav__dropdown">
+            <a href="#orientador" class="nav__sublink">Eu, Orientador(a)?</a>
+            <a href="#avaliador" class="nav__sublink">Eu, Avaliador(a)?</a>
+          </div>
+        </div>
+
+        <a href="#editais" class="nav__link">Editais</a>
+        <a href="#anais" class="nav__link">Anais</a>
+        <a href="#canal" class="nav__link">Canal FECITERN</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="https://pesquisa-em-rede7.webnode.page/" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+          Pesquisa em Rede <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__banner">
+        <img src="assets/banner-hero.png" alt="Banner oficial da FECITERN — Feira Estadual de Ciência, Inovação e Tecnologia" />
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow reveal">UERN · CAPF · SEEC/RN · FAPERN</p>
+        <h1 class="hero__title reveal" style="--delay:.08s">
+          Feira Estadual de <span class="grad grad--1">Ciência</span>,
+          <span class="grad grad--2">Inovação</span> e
+          <span class="grad grad--3">Tecnologia</span> do<br> Rio Grande do Norte
+        </h1>
+        <p class="hero__sub reveal" style="--delay:.16s">
+          Um espaço de desenvolvimento da cultura científica no espaço escolar,
+          fortalecendo o elo entre a escola e a universidade.
+        </p>
+        <div class="hero__actions reveal" style="--delay:.24s">
+          <a href="#sobre" class="btn btn--primary">Conheça a FECITERN</a>
+          <a href="#anais" class="btn btn--ghost">Caderno de Resumos 2025</a>
+        </div>
+
+        <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">
+          <span class="hero__scroll-text">rolar</span>
+          <span class="hero__scroll-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SOBRE — O que é · História · Objetivo
+         ============================================================ -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="spectrum" aria-hidden="true"></span>
+          <p class="eyebrow">Sobre</p>
+          <h2 class="section__title">Uma feira que aproxima a escola da universidade</h2>
+        </header>
+
+        <div class="sobre__grid">
+          <!-- O QUE É -->
+          <article class="card reveal" style="--delay:.05s">
+            <div class="card__icon card__icon--green" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+            <p class="card__kicker">01 — O que é</p>
+            <h3 class="card__title">O QUE É A FECITERN?</h3>
+            <p class="card__text">
+              A Feira Estadual de Ciência, Inovação e Tecnologia do Rio Grande do Norte
+              (FECITERN) é um espaço de desenvolvimento de uma cultura científica no espaço
+              escolar, voltado ao fortalecimento do elo entre a escola e a universidade.
+            </p>
+            <p class="card__text">
+              O projeto parte da <strong>Universidade do Estado do Rio Grande do Norte (UERN)</strong>,
+              por meio do <strong>Campus Avançado de Pau dos Ferros (CAPF)</strong> e do
+              <strong>Departamento de Educação</strong>, com foco nas escolas públicas estaduais
+              vinculadas à <strong>Secretaria de Estado da Educação e da Cultura do Rio Grande do Norte — SEEC/RN</strong>.
+            </p>
+          </article>
+
+          <!-- HISTÓRIA -->
+          <article class="card reveal" style="--delay:.12s">
+            <div class="card__icon card__icon--indigo" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+            <p class="card__kicker">02 — História</p>
+            <h3 class="card__title">HISTÓRIA</h3>
+            <p class="card__text">
+              A iniciativa nasce do compromisso da <strong>FAPERN</strong> com a promoção da
+              cultura científica na educação básica, abrangendo os <strong>dez Territórios da
+              Cidadania</strong> do Rio Grande do Norte e os municípios onde estão localizadas as DIRECs.
+            </p>
+            <p class="card__text">
+              Com financiamento do <strong>Programa Mais Cultura Científica</strong>, a FECITERN
+              apoia o letramento científico e o ensino por investigação, reunindo pelo menos
+              <strong>80 projetos</strong> de escolas públicas e privadas da educação básica — incluindo
+              EJA e educação profissional e tecnológica — e articulando as <strong>dez Feiras de
+              Ciências Territoriais</strong>.
+            </p>
+            <ul class="territorios" aria-label="Territórios da Cidadania">
+              <li>Assu-Mossoró</li>
+              <li>Seridó</li>
+              <li>Terras Potiguaras</li>
+              <li>Alto Oeste</li>
+              <li>Agreste e Litoral Sul</li>
+              <li>Sertão do Apodi</li>
+              <li>Sertão Central, Cabugi e Litoral Norte</li>
+              <li>Trairi</li>
+              <li>Potengi</li>
+              <li>Mato Grande</li>
+            </ul>
+          </article>
+
+          <!-- OBJETIVO -->
+          <article class="card reveal" style="--delay:.19s">
+            <div class="card__icon card__icon--magenta" aria-hidden="true"><i class="fa-solid fa-bullseye"></i></div>
+            <p class="card__kicker">03 — Objetivo</p>
+            <h3 class="card__title">OBJETIVO</h3>
+            <p class="card__text card__text--lead">
+              “Promover a cultura científica no espaço escolar por meio da realização da FECITERN.”
+            </p>
+            <p class="card__text">
+              Favorecer a <strong>apropriação do conhecimento científico</strong> como forma de
+              inclusão social e desenvolver a <strong>curiosidade científica</strong> de estudantes
+              do ensino fundamental (anos finais) e do ensino médio.
+            </p>
+            <p class="card__text">
+              Assegurar a participação de estudantes de regiões do estado com potencial para
+              integrar uma <strong>feira de ciências de abrangência estadual</strong>.
+            </p>
+          </article>
+        </div>
+
+        <!-- Galeria de momentos -->
+        <div class="gallery reveal">
+          <figure class="gallery__item">
+            <!-- O href do link aponta para a imagem grande. A classe glightbox ativa o efeito -->
+            <a href="assets/foto-1.png" class="glightbox" data-gallery="galeria-fecitern">
+              <img src="assets/foto-1.png" alt="Momentos da FECITERN" loading="lazy" />
+            </a>
+          </figure>
+
+          <figure class="gallery__item">
+            <a href="assets/foto-2.png" class="glightbox" data-gallery="galeria-fecitern">
+              <img src="assets/foto-2.png" alt="Momentos da FECITERN" loading="lazy" />
+            </a>
+          </figure>
+
+            <!-- O href do link aponta para a imagem grande. A classe glightbox ativa o efeito -->
+          <figure class="gallery__item">
+            <a href="assets/foto-3.png" class="glightbox" data-gallery="galeria-fecitern">
+              <img src="assets/foto-3.png" alt="Momentos da FECITERN" loading="lazy" />
+            </a>
+          </figure>
+
+          <figure class="gallery__item">
+            <a href="assets/foto-4.png" class="glightbox" data-gallery="galeria-fecitern">
+              <img src="assets/foto-4.png" alt="Momentos da FECITERN" loading="lazy" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DADOS — FECITERN 2025 em números
+         ============================================================ -->
+    <section class="section section--brand" id="numeros">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="spectrum spectrum--center" aria-hidden="true"></span>
+          <p class="eyebrow">FECITERN 2025</p>
+          <h2 class="section__title">A primeira edição em números</h2>
+        </header>
+        <!--<div class="stats">
+          <div class="stat reveal" style="--delay:.05s">
+            <span class="stat__num">232</span>
+            <span class="stat__label">estudantes do Fundamental e Médio</span>
+          </div>
+          <div class="stat reveal" style="--delay:.12s">
+            <span class="stat__num">99</span>
+            <span class="stat__label">orientadores e coorientadores</span>
+          </div>
+          <div class="stat reveal" style="--delay:.19s">
+            <span class="stat__num">88</span>
+            <span class="stat__label">projetos científicos apresentados</span>
+          </div>
+          <div class="stat reveal" style="--delay:.26s">
+            <span class="stat__num">34</span>
+            <span class="stat__label">municípios, do sertão ao litoral</span>
+          </div>
+        </div>-->
+        <div class="stats">
+          <div class="stat reveal" style="--delay:.05s">
+            <!-- Adicionado o data-target e iniciado em 0 -->
+            <span class="stat__num" data-target="232">0</span>
+            <span class="stat__label">estudantes do Fundamental e Médio</span>
+          </div>
+          <div class="stat reveal" style="--delay:.12s">
+            <span class="stat__num" data-target="99">0</span>
+            <span class="stat__label">orientadores e coorientadores</span>
+          </div>
+          <div class="stat reveal" style="--delay:.19s">
+            <span class="stat__num" data-target="88">0</span>
+            <span class="stat__label">projetos científicos apresentados</span>
+          </div>
+          <div class="stat reveal" style="--delay:.26s">
+            <span class="stat__num" data-target="34">0</span>
+            <span class="stat__label">municípios, do sertão ao litoral</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EVENTOS
+         ============================================================ -->
+    <section class="section" id="eventos">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="spectrum" aria-hidden="true"></span>
+          <p class="eyebrow">Eventos</p>
+          <h2 class="section__title">Agenda e edições anteriores</h2>
+        </header>
+
+        <!-- Agenda 2026 -->
+        <h3 class="subheading reveal">AGENDA 2026</h3>
+        <div class="timeline">
+          <article class="tl reveal" style="--delay:.05s">
+            <div class="tl__date"><span class="tl__day">20</span><span class="tl__month">MAR 2026</span></div>
+            <div class="tl__body">
+              <h4 class="tl__title">Oficina “Eu, Orientador(a)?”</h4>
+              <p class="tl__text">Formação para professores(as) e profissionais da educação interessados em orientar projetos científicos. Realizada por videoconferência, das 8h30 às 11h30. Inscrições abertas até 18 de março.</p>
+              <a href="#orientador" class="link">Saiba mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="tl reveal" style="--delay:.1s">
+            <div class="tl__date"><span class="tl__day">16</span><span class="tl__month">ABR 2026</span></div>
+            <div class="tl__body">
+              <h4 class="tl__title">Ciclo Formativo FECITERN 2026</h4>
+              <p class="tl__text">Primeira oficina presencial de 2026 para orientadores, na Escola Municipal Professor Severino Bezerra, Pau dos Ferros/RN.</p>
+              <a href="#orientador" class="link">Saiba mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="tl reveal" style="--delay:.15s">
+            <div class="tl__date"><span class="tl__day">22</span><span class="tl__month">ABR 2026</span></div>
+            <div class="tl__body">
+              <h4 class="tl__title">Capacitação de avaliadores</h4>
+              <p class="tl__text">Formação com estudantes de Pedagogia da UERN, campus Pau dos Ferros, para atuarem nas feiras regionais e territoriais.</p>
+              <a href="#avaliador" class="link">Saiba mais <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Datas importantes (banner de calendário) -->
+        <article class="datas reveal">
+          <header class="datas__head">
+            <span class="datas__icon" aria-hidden="true"><i class="fa-solid fa-calendar-days"></i></span>
+            <h3 class="datas__title">DATAS IMPORTANTES!!</h3>
+          </header>
+          <div class="datas__grid">
+            <div class="datas__block">
+              <h4 class="datas__block-title">Oficina / Capacitação para Orientadores(as)</h4>
+              <p class="datas__period">Março · Abril</p>
+              <ul class="datas__list">
+                <!-- Atualização da agenda de feiras -->
+                <li><span class="datas__label">1ª Oficina</span><span>20/03 — Formato Remoto</span></li>
+                <li><span class="datas__label">2ª Oficina</span><span>21/07 — Formato Remoto</span></li>
+              </ul>
+            </div>
+            <div class="datas__block datas__block--main">
+              <h4 class="datas__block-title">Feiras Regionais / Territoriais</h4>
+              <p class="datas__period">Julho · Agosto · Setembro</p>
+              <ul class="datas__list">
+                <li><span>04/08: 9ª DIREC - Currais Novos Território Seridó</span></li>
+                <li><span>07/08: 8ª DIREC - Angicos Território Sertão Central Cabugi / Litoral Norte</span></li>
+                <li><span>04/08: 13/08 e 14/08: 13ª DIREC - Apodi Território Sertão do Apodi</span></li>
+                <li><span>18/08 e 19/08: 12ª DIREC - Mossoró Território Açu / Mossoró</span></li>
+                <li><span>25/08 e 26/08: 15ª DIREC - Pau dos Ferros Território Alto Oeste</span></li>
+                <li><span>27/08: 14ª DIREC - Umarizal Território Sertão do Apodi</span></li>
+                <li><span>28/08: 6ª DIREC - Macau Território Sertão Central Cabugi / Litoral Norte</span></li>
+                <li><span>02/09 a 04/09: 11ª DIREC - Açu Território Açu/Mossoró</span></li>
+                <li><span>16/09 e 17/09: 10ª DIREC - Caicó Território Seridó</span></li>
+                <li><span>25/11 a 26/11: II Feira de Ciência, Inovação e Tecnologia do Rio Grande do Norte - FECITERN UERN - Campus Natal</span></li>
+                <li><span>01/12 a 04/12: XVI Feira de Ciências do Semiárido Potiguar - FCSP UFERSA - Campus Mossoró</span></li>
+              </ul>
+            </div>
+            <div class="datas__block">
+              <h4 class="datas__block-title">FECITERN 2026</h4>
+              <ul class="datas__list">
+                <li><span class="datas__label">Período de inscrição de trabalho</span><span>21 a 27 de setembro</span></li>
+                <li><span class="datas__label">Divulgação dos finalistas</span><span>até 30 de setembro</span></li>
+                <li><span class="datas__label">Data</span><span>25 e 26 de novembro</span></li>
+                <li><span class="datas__label">Local</span><span>UERN — Campus de Natal</span></li>
+                <li><span class="datas__label">Horário</span><span>7h às 17h</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Eventos anteriores -->
+        <h3 class="subheading reveal" style="margin-top:4rem">EVENTOS ANTERIORES</h3>
+        <article class="card reveal">
+          <div class="card__body">
+            <div class="card__meta">
+              <span class="chip chip--brand">09 de dezembro de 2025</span>
+              <span class="chip">UERN · Campus Avançado de Natal</span>
+            </div>
+            <h4 class="card__title">FECITERN 2025</h4>
+            <p class="card__text">
+              A primeira edição da Feira Estadual de Ciência, Inovação e Tecnologia do Rio Grande do
+              Norte consolidou o protagonismo estudantil, a formação científica e a prática
+              investigativa no estado.
+            </p>
+
+            <h5 class="card__subhead">Oficinas realizadas</h5>
+            <ul class="list">
+              <li><strong>Metodologia Científica ao Alcance de Todos</strong> — Profa. Celicina Maria da Silveira Borges Azevedo</li>
+              <li><strong>Mão na Massa – Laboratório de Matemática (LabMat)</strong> — Prof. Marcelo Lemos do Nascimento</li>
+            </ul>
+
+            <h5 class="card__subhead">Categorias de destaque</h5>
+            <div class="chips">
+              <span class="chip">Direc</span>
+              <span class="chip">Acessibilidade</span>
+              <span class="chip">Ciências Agrárias e Ambientais</span>
+              <span class="chip">Ciências da Saúde</span>
+              <span class="chip">Ciências Exatas</span>
+              <span class="chip">Ciências Humanas</span>
+              <span class="chip">Ciências Naturais</span>
+              <span class="chip">Ciências Sociais Aplicadas</span>
+              <span class="chip">Criatividade e Inovação</span>
+              <span class="chip">Diário de Bordo</span>
+              <span class="chip">Diversidade de Gênero</span>
+              <span class="chip">Empreendedorismo</span>
+              <span class="chip">Linguística, Letras e Artes</span>
+              <span class="chip">Metodologia Científica</span>
+              <span class="chip">Relevância Social e Ambiental</span>
+              <span class="chip">Sustentabilidade</span>
+            </div>
+
+            <h5 class="card__subhead">Premiação</h5>
+            <p class="card__text">
+              Medalhas e troféus para 1º, 2º e 3º lugar no Ensino Fundamental e no Ensino Médio.
+              Os vencedores receberam credenciais para a <strong>Feira de Ciências do Semiárido
+              Potiguar</strong> (UFERSA, Mossoró/RN) e o 1º lugar do Ensino Médio garantiu
+              credenciais para a <strong>FEBRACE 2026</strong>, na Universidade de São Paulo (USP).
+            </p>
+            <p class="card__footnote">
+              Realização e apoio: UERN, SEEC/RN, FAPERN e UFERSA, com apoio do CNPq e do MCTI.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OFICINAS
+         ============================================================ -->
+    <section class="section section--soft" id="oficinas">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="spectrum" aria-hidden="true"></span>
+          <p class="eyebrow">Oficinas</p>
+          <h2 class="section__title">Formação para orientar e avaliar</h2>
+        </header>
+
+        <div class="oficinas__grid">
+          <!-- Orientador -->
+          <article class="card reveal" id="orientador" style="--delay:.05s">
+            <div class="card__media">
+              <!-- GLightbox envolvendo a imagem -->
+              <a href="assets/metodo-cientifico.png" class="glightbox">
+                <img src="assets/metodo-cientifico.png" alt="Método científico" loading="lazy" />
+              </a>
+            </div>
+            <div class="card__body">
+              <p class="card__kicker">Para professores(as)</p>
+              <h3 class="card__title">EU, ORIENTADOR(A)?</h3>
+              <p class="card__text">
+                Formação voltada a professores(as) e profissionais da educação dos anos finais do
+                ensino fundamental e do ensino médio que desejam orientar projetos em feiras de
+                ciências — do método científico ao desenho da pesquisa, passando pela organização e
+                apresentação dos trabalhos.
+              </p>
+              <ul class="list">
+                <li>Estratégias de acompanhamento e autonomia dos estudantes</li>
+                <li>Método científico aplicado à educação básica</li>
+                <li>Orientação para submissão à FECITERN 2026</li>
+                <li>Primeira edição com <strong>mais de 200 participantes</strong> na sala virtual</li>
+              </ul>
+              <div class="card__actions">
+                <a href="https://youtube.com/shorts/JG7i30j_tmc" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i> Veja como foi
+                </a>
+                <a href="https://docs.google.com/presentation/d/1cd7JrzulLCvV4GR1pA4Wmf2qpLvL5_nT/edit?usp=sharing" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-sliders" aria-hidden="true"></i> Slides
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Avaliador -->
+          <article class="card reveal" id="avaliador" style="--delay:.12s">
+            <div class="card__body">
+              <p class="card__kicker">Para avaliadores(as)</p>
+              <h3 class="card__title">EU, AVALIADOR(A)?</h3>
+              <p class="card__text">
+                Formação sobre os processos de avaliação em feiras de ciências: critérios bem
+                definidos, escuta atenta e postura ética — para construir práticas avaliativas mais
+                justas, responsáveis e incentivadoras para jovens pesquisadores.
+              </p>
+              <ul class="list">
+                <li>Critérios de avaliação e metodologia científica</li>
+                <li>Análise ética, crítica e construtiva dos trabalhos</li>
+                <li>O papel do avaliador no incentivo à pesquisa escolar</li>
+                <li>Edições presenciais na UERN (Natal e Pau dos Ferros)</li>
+              </ul>
+              <div class="card__actions">
+                <a href="https://youtube.com/shorts/tjwnAM3lxHQ" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i> Melhores momentos
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDITAIS
+         ============================================================ -->
+    <section class="section" id="editais">
+      <div class="container container--narrow">
+        <header class="section__head section__head--center reveal">
+          <span class="spectrum spectrum--center" aria-hidden="true"></span>
+          <p class="eyebrow">Editais</p>
+          <h2 class="section__title">Editais de inscrição</h2>
+        </header>
+
+        <article class="edital reveal">
+          <div class="edital__icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></div>
+          <div class="edital__body">
+            <p class="card__kicker">Edital de inscrição</p>
+            <h3 class="edital__title">EDITAL DE INSCRIÇÃO FECITERN 01/2025</h3>
+            <p class="card__text">Acesse o edital completo com regras, prazos e orientações para inscrição de projetos.</p>
+          </div>
+          <!-- Substitua href="#" pelo link direto do PDF (ex.: Google Drive / portal UERN) -->
+          <a href="https://drive.google.com/file/d/1VViA-9ifGut8N1WAGP6GQpbSe8nlHGA9/view" class="btn btn--primary" target="_blank" rel="noopener">
+            Acessar edital <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ANAIS
+         ============================================================ -->
+    <section class="section section--soft" id="anais">
+      <div class="container container--narrow">
+        <article class="anais reveal">
+          <span class="spectrum spectrum--center" aria-hidden="true"></span>
+          <p class="eyebrow">Anais · Publicação</p>
+          <h2 class="anais__title">Publicado o Caderno de Resumos da FECITERN 2025!</h2>
+          <p class="anais__text">
+            O <strong>Caderno de Resumos FECITERN 2025</strong> reúne os trabalhos científicos
+            apresentados por estudantes dos anos finais do ensino fundamental e do ensino médio /
+            educação técnica, sob orientação de professores(as) da educação básica — <strong>88
+            trabalhos</strong> de escolas majoritariamente públicas de <strong>34 municípios</strong>,
+            do sertão ao litoral do estado.
+          </p>
+          <p class="anais__text">
+            Publicação de acesso livre e gratuito, pelo selo da <strong>Editora da Rede-Ter</strong>.
+          </p>
+          <a href="https://portal.uern.br/propeg/rede-ter/wp-content/uploads/sites/6/2026/03/CADERNO_RESUMOS_FECITERN_2025_.pdf"
+             class="btn btn--primary" target="_blank" rel="noopener">
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Acessar o Caderno de Resumos
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CANAL FECITERN + REDES SOCIAIS
+         ============================================================ -->
+    <section class="section" id="canal">
+      <div class="container">
+        <div class="canal reveal">
+          <div class="canal__body">
+            <span class="spectrum" aria-hidden="true"></span>
+            <p class="eyebrow">Canal FECITERN</p>
+            <h2 class="section__title">Canal oficial da FECITERN no YouTube</h2>
+            <p class="card__text">
+              Um espaço de conteúdo exclusivo: gravações da feira, oficinas de formação, entrevistas,
+              dicas para estudantes e orientadores e momentos marcantes da educação científica no
+              estado. Criado para ampliar o alcance das ações e compartilhar conhecimento de forma
+              acessível e inspiradora.
+            </p>
+            <div class="card__actions">
+              <a href="https://www.youtube.com/@FECITERN" class="btn btn--primary" target="_blank" rel="noopener">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i> Inscrever-se no canal
+              </a>
+            </div>
+          </div>
+
+          <div class="canal__socials" aria-label="Redes sociais">
+            <a class="social" href="https://www.instagram.com/fecitern/" target="_blank" rel="noopener" aria-label="Instagram FECITERN">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span><strong>Instagram</strong> — FECITERN</span>
+            </a>
+            <a class="social" href="https://www.instagram.com/fapern/" target="_blank" rel="noopener" aria-label="Instagram FAPERN">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span><strong>Instagram</strong> — FAPERN</span>
+            </a>
+            <a class="social" href="https://www.youtube.com/@FECITERN" target="_blank" rel="noopener" aria-label="YouTube FECITERN">
+              <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              <span><strong>YouTube</strong> — FECITERN</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- QR codes para seguir -->
+        <div class="qrcodes reveal">
+          <h3 class="subheading">Aponte a câmera e siga</h3>
+          <div class="qrcodes__grid">
+            <div class="qr">
+              <img src="assets/qr-instagram-fecitern.png" alt="QR code do Instagram da FECITERN" loading="lazy" />
+              <span>Instagram FECITERN</span>
+            </div>
+            <div class="qr">
+              <img src="assets/qr-instagram-fapern.png" alt="QR code do Instagram da FAPERN" loading="lazy" />
+              <span>Instagram FAPERN</span>
+            </div>
+            <div class="qr">
+              <img src="assets/qr-youtube.png" alt="QR code do YouTube da FECITERN" loading="lazy" />
+              <span>YouTube FECITERN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTATO (formulário — Formspree)
+         ============================================================ -->
+    <section class="section section--soft" id="contato">
+      <div class="container container--narrow">
+        <header class="section__head section__head--center reveal">
+          <span class="spectrum spectrum--center" aria-hidden="true"></span>
+          <p class="eyebrow">Contato</p>
+          <h2 class="section__title">Fale com a FECITERN</h2>
+          <p class="section__sub">Dúvidas, inscrições ou interesse em participar, orientar ou avaliar.</p>
+        </header>
+
+        <!-- ============================================================
+             IMPORTANTE (GitHub Pages): o formulário NÃO pode apontar para PHP.
+             Usamos o Formspree (serviço gratuito de envio de formulários estáticos).
+             Substitua SEU_ID pelo ID do seu formulário em https://formspree.io
+             (ex.: action="https://formspree.io/f/mqkrznlw")
+             ============================================================ -->
+        <form class="form reveal" id="contact-form" novalidate
+              action="https://formspree.io/f/SEU_ID" method="POST">
+          <div class="form__row">
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required />
+              <p class="field__error" data-error="nome"></p>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required />
+              <p class="field__error" data-error="email"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="telefone">WhatsApp / Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(84) 99999-9999" inputmode="tel" autocomplete="tel" />
+              <p class="field__error" data-error="telefone"></p>
+            </div>
+            <div class="field">
+              <label for="interesse">Qual é o seu interesse?</label>
+              <select id="interesse" name="interesse" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="participar">Quero participar (estudante)</option>
+                <option value="orientar">Quero orientar (professor/a)</option>
+                <option value="avaliar">Quero avaliar</option>
+                <option value="outro">Outra dúvida</option>
+              </select>
+              <p class="field__error" data-error="interesse"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem…" required></textarea>
+            <p class="field__error" data-error="mensagem"></p>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block" id="submit-btn">
+            Enviar mensagem <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="nav__logo">
+          <img src="assets/logo-fecitern.png" alt="" width="48" height="31" />
+          <span class="nav__logo-text">FECITERN</span>
+        </a>
+        <p class="footer__tagline">
+          Feira Estadual de Ciência, Inovação e Tecnologia do Rio Grande do Norte.
+        </p>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/fecitern/" target="_blank" rel="noopener" aria-label="Instagram FECITERN"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/fapern/" target="_blank" rel="noopener" aria-label="Instagram FAPERN"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/@FECITERN" target="_blank" rel="noopener" aria-label="YouTube FECITERN"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__heading">Navegação</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#oficinas">Oficinas</a>
+        <a href="#editais">Editais</a>
+        <a href="#anais">Anais</a>
+        <a href="#canal">Canal FECITERN</a>
+      </div>
+
+      <div class="footer__partners">
+        <h4 class="footer__heading">Realização e apoio</h4>
+        <ul>
+          <li><a href="https://portal.uern.br/" target="_blank" rel="noopener">UERN</a></li>
+          <li><a href="https://portal.uern.br/paudosferros/" target="_blank" rel="noopener">CAPF</a></li>
+          <li><a href="http://www.educacao.rn.gov.br/" target="_blank" rel="noopener">SEEC/RN</a></li>
+          <li><a href="http://www.fapern.rn.gov.br/" target="_blank" rel="noopener">FAPERN</a></li>
+          <li><a href="https://ufersa.edu.br/" target="_blank" rel="noopener">UFERSA</a></li>
+          <li><a href="https://www.gov.br/cnpq/pt-br" target="_blank" rel="noopener">CNPq</a></li>
+          <li><a href="https://www.gov.br/mcti/pt-br" target="_blank" rel="noopener">MCTI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 FECITERN — Todos os direitos reservados.</p>
+      <a href="https://pesquisa-em-rede7.webnode.page/" target="_blank" rel="noopener">Pesquisa em Rede</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÃO FLUTUANTE DE WHATSAPP
+       Substitua o número abaixo pelo WhatsApp oficial da FECITERN
+       (formato internacional: 55 + DDD + número, sem espaços ou símbolos)
+       ============================================================ -->
+  <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20FECITERN."
+     class="whatsapp" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- ============================================================
+       MODAL DE CONFIRMAÇÃO
+       ============================================================ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog">
+      <button class="modal__close" data-close aria-label="Fechar">&times;</button>
+      <div class="modal__icon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+      <h3 class="modal__title" id="modal-title">Mensagem enviada!</h3>
+      <p class="modal__text" id="modal-text">Recebemos o seu contato. Em breve a equipe da FECITERN responderá.</p>
+      <button class="btn btn--primary" data-close>Entendi</button>
+    </div>
+  </div>
+  <!-- 1. Importa o motor do GLightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- 2. Ativa o GLightbox -->
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox', // Procura por todos os links com essa classe
+      touchNavigation: true,  // Permite arrastar no celular
+      loop: true              // Quando chegar na última foto, volta pra primeira
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
