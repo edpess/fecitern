@@ -671,3 +671,57 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   .reveal { opacity: 1; transform: none; }
 }
 
+/* Card do Regulamento / Editais */
+.regulamento__card,
+.edital__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+/* Área central de texto */
+.regulamento__content,
+.edital__content {
+  flex: 1 1 auto;
+  min-width: 0; /* Previne quebras forçadas de palavras e estouro no Flexbox */
+}
+
+.regulamento__title,
+.edital__title {
+  color: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0.4rem 0 0.8rem;
+}
+
+/* Coluna de botões à direita (alinhada na vertical em fila única) */
+.regulamento__actions,
+.edital__actions {
+  display: flex !important;
+  flex-direction: column !important; /* Força os botões a ficarem empilhados */
+  flex-wrap: nowrap !important;
+  flex-shrink: 0;
+  gap: 0.75rem;
+  width: 260px; /* Largura padrão uniforme idêntica à segunda imagem */
+}
+
+.regulamento__actions .btn,
+.edital__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
