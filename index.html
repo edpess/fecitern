@@ -489,9 +489,119 @@
       </div>
     </section>
 
+    O desalinhamento deve-se ao facto de a coluna com o ícone e os botões de ação estar a utilizar classes que forçam quebras de linha (`flex-wrap: wrap`) e largura insuficiente para o conteúdo de texto.
+
+A correção deve ser feita diretamente no ficheiro **`style.css`**.
+
+---
+
+### Alteração no ficheiro `style.css`
+
+Localize as regras aplicadas à secção de **Editais / Regulamento** (ou classe `.edital__card` / `.regulamento__card` e respectivos botões/ações) no final do ficheiro `style.css` e substitua ou adicione as seguintes propriedades:
+
+```css
+/* Card do Regulamento / Editais */
+.regulamento__card,
+.edital__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+/* Área central de texto */
+.regulamento__content,
+.edital__content {
+  flex: 1 1 auto;
+  min-width: 0; /* Previne quebras forçadas de palavras e estouro no Flexbox */
+}
+
+.regulamento__title,
+.edital__title {
+  color: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0.4rem 0 0.8rem;
+}
+
+/* Coluna de botões à direita (alinhada na vertical em fila única) */
+.regulamento__actions,
+.edital__actions {
+  display: flex !important;
+  flex-direction: column !important; /* Força os botões a ficarem empilhados */
+  flex-wrap: nowrap !important;
+  flex-shrink: 0;
+  gap: 0.75rem;
+  width: 260px; /* Largura padrão uniforme idêntica à segunda imagem */
+}
+
+.regulamento__actions .btn,
+.edital__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+```
+
+---
+
+### Verificação no ficheiro `index.html`
+
+Certifique-se de que a estrutura HTML do cartão na secção de editais está agrupada deste modo:
+
+```html
+<article class="card regulamento__card">
+  <!-- Ícone do documento à esquerda -->
+  <div class="card__icon card__icon--indigo" aria-hidden="true">
+    <i class="fa-solid fa-file-lines"></i>
+  </div>
+
+  <!-- Conteúdo de texto ao centro -->
+  <div class="regulamento__content">
+    <p class="card__kicker">REGULAMENTO FECITERN 2026</p>
+    <h3 class="regulamento__title">
+      Normas gerais de apresentação de trabalhos científicos na Feira Estadual de Ciência, Inovação e Tecnologia do Rio Grande do Norte - FECITERN
+    </h3>
+    <p class="card__text">
+      Acesse o edital completo com regras, prazos e orientações para inscrição de projetos.
+    </p>
+  </div>
+
+  <!-- Grupo de ações empilhadas à direita -->
+  <div class="regulamento__actions">
+    <a href="https://drive.google.com/file/d/1lVDg3Z75xbHjTH2DV-p78726Allrrj1U/view?usp=sharing" class="btn btn--primary" target="_blank" rel="noopener">
+      Acessar Regulamento <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+    <a href="https://pronice.gravatai.ifsul.edu.br/Views/Menus/index.php" class="btn btn--primary" target="_blank" rel="noopener">
+      Acessar sistema PRONICE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+    <a href="https://drive.google.com/file/d/1koNcAqpuKYu74XZA-YCgMWLgGzaNHSbC/view?usp=sharing" class="btn btn--primary" target="_blank" rel="noopener">
+      Slides da oficina PRONICE <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+    <a href="https://drive.google.com/file/d/1s5GKq0mM_QKzG3SUJ3eNECI8k8LHw-xD/view?usp=sharing" class="btn btn--primary" target="_blank" rel="noopener">
+      Termo de Autorização <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+</article>
+
+```
+
     <!-- ============================================================
          REGULAMENTOS
-         ============================================================ -->
+         ============================================================
     <section class="section" id="editais">
       <div class="container container--narrow">
         <header class="section__head section__head--center reveal">
@@ -526,7 +636,7 @@
             </div>
           </article>
       </div>
-    </section>
+    </section> -->
 
     <!-- ============================================================
          EDITAIS
